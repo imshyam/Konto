@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Notifications :"
+        android:id="@+id/textView"
+        android:textSize="30sp" />
+</LinearLayout><!-- From: file:/home/imshyam/Desktop/Konto/app/src/main/res/layout/notific.xml -->
