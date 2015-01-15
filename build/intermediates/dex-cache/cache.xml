@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/imshyam/Desktop/Konto/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-f900da64c37cd3eb35adf25e53ba8535be211d5f.jar"
+        jar="/home/imshyam/Downloads/android-studio/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/home/imshyam/Desktop/Konto/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-04ddf51fe9f1f7d1c3053b6f85e0f8950c4e4735.jar"
+        jar="/home/imshyam/Desktop/Konto/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/home/imshyam/Desktop/Konto/app/build/intermediates/pre-dexed/debug/classes-d593047ca87ed1978a5475401535edb5461de390.jar"
+        jar="/home/imshyam/Desktop/Konto/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+
+</pre-dex-items>
