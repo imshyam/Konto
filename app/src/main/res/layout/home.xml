@@ -1,12 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TableLayout
+    android:id="@+id/table"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <TableLayout
-        android:id="@+id/table"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        />
+    </TableLayout>
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="People Who Owe You"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
 
-
-</FrameLayout>
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="You Owe People"
+        android:id="@+id/button4"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_alignParentTop="true"
+        android:hint="First Name"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_marginTop="52dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:hint="Last Name"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/editText6"/>
+
+    <EditText
+        android:layout_width="200sp"
+        android:hint="username"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:layout_below="@+id/editText7" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:hint="Old Password"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText9"
+        android:layout_below="@+id/editText8"/>
+
+    <EditText
+        android:layout_width="200sp"
+        android:hint="New Password"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText10"
+        android:layout_below="@+id/editText9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:id="@+id/button2"
+        android:layout_below="@+id/editText10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+</RelativeLayout>

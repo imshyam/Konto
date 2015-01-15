@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#144955">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="K"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#828E8C"
+        android:textSize="80sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="username"
+        android:textColor="#828E8C"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="36dp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/editText2"/>
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#828E8C"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:imeOptions="actionGo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/button"
+        android:textColor="#144955"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:textColor="#828E8C"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
+</RelativeLayout><!-- From: file:/C:/Users/shyam/Desktop/Konto/app/src/main/res/layout/sign_in.xml -->
