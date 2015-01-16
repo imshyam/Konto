@@ -11,4 +11,4 @@
         android:id="@+id/textView"
         android:textSize="30sp" />
 </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/shyam/Desktop/Konto/app/src/main/res/layout/notific.xml -->
+</ScrollView><!-- From: file:/home/shyam/Desktop/Konto/app/src/main/res/layout/notific.xml -->

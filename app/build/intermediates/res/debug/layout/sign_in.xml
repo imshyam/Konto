@@ -64,4 +64,4 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp" />
-</RelativeLayout><!-- From: file:/C:/Users/shyam/Desktop/Konto/app/src/main/res/layout/sign_in.xml -->
+</RelativeLayout><!-- From: file:/home/shyam/Desktop/Konto/app/src/main/res/layout/sign_in.xml -->

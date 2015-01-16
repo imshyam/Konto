@@ -25,4 +25,4 @@ android:layout_height="match_parent">
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/button3"
         android:layout_alignStart="@+id/button3" />
-</RelativeLayout><!-- From: file:/C:/Users/shyam/Desktop/Konto/app/src/main/res/layout/home.xml -->
+</RelativeLayout><!-- From: file:/home/shyam/Desktop/Konto/app/src/main/res/layout/home.xml -->

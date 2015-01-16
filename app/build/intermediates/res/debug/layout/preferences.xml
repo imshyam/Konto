@@ -60,4 +60,4 @@
         android:layout_below="@+id/editText10"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp" />
-</RelativeLayout><!-- From: file:/C:/Users/shyam/Desktop/Konto/app/src/main/res/layout/preferences.xml -->
+</RelativeLayout><!-- From: file:/home/shyam/Desktop/Konto/app/src/main/res/layout/preferences.xml -->

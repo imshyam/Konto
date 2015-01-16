@@ -99,4 +99,4 @@
         android:layout_alignRight="@+id/editText5"
         android:layout_alignEnd="@+id/editText5" />
 
-</RelativeLayout><!-- From: file:/C:/Users/shyam/Desktop/Konto/app/src/main/res/layout/sign_up.xml -->
+</RelativeLayout><!-- From: file:/home/shyam/Desktop/Konto/app/src/main/res/layout/sign_up.xml -->
