@@ -1,4 +1,4 @@
-#RollCall
+#Konto
 ###About
 ___
 - android app for manage borrowing from friends
