@@ -393,14 +393,21 @@ public class Positive extends Activity{
                         tvMoney.setTextSize(20);
                         final String st = "" + (i + 1) + "  ";
                         tvid.setText(st);
-                        tvMoney.setText(listDetail[i*4+3]);
-                        tv1.setText(list[i]);
+                        //if parsed json is empty then min length is 2.
                         final Button btn = new Button(getApplicationContext());
-                        btn.setText("Delete");
-                        tbrow.addView(tvid);
-                        tbrow.addView(tv1);
-                        tbrow.addView(tvMoney);
-                        tbrow.addView(btn);
+                        if(Details.length()>3) {
+                            tvMoney.setText(listDetail[i * 4 + 3]);
+                            tv1.setText(list[i]);
+                            btn.setText("Delete");
+                            tbrow.addView(tvid);
+                            tbrow.addView(tv1);
+                            tbrow.addView(tvMoney);
+                            tbrow.addView(btn);
+                        }
+                        else{
+                            tv1.setText("No one owes you.");
+                            tbrow.addView(tv1);
+                        }
 
                         final int finalI = i;
                         btn.setOnClickListener(new View.OnClickListener() {

@@ -365,6 +365,7 @@ public class Negative extends Activity {
                     String[] list = Str.split(",");
 
                     String Details = json.getString("negetive");
+                    Log.e("Erro is : ",""+Details.length());
                     Details = Details.replace("\"", "");
                     Details = Details.replace("[", "");
                     Details = Details.replace("]", "");
@@ -383,12 +384,18 @@ public class Negative extends Activity {
                         tvMoney.setTextSize(20);
                         final String st = "" + (i + 1) + "  ";
                         tvid.setText(st);
-                        tvMoney.setText(listDetail[i*4+3]);
-                        tv1.setText(list[i]);
-                        tbrow.addView(tvid);
-                        tbrow.addView(tv1);
-                        tbrow.addView(tvMoney);
-
+                        //if parsed json is empty then min length is 2.
+                        if(Details.length()>3) {
+                            tvMoney.setText(listDetail[i * 4 + 3]);
+                            tv1.setText(list[i]);
+                            tbrow.addView(tvid);
+                            tbrow.addView(tv1);
+                            tbrow.addView(tvMoney);
+                        }
+                        else{
+                            tv1.setText("You owe No one.");
+                            tbrow.addView(tv1);
+                        }
                         ll.addView(tbrow);
                         View v = new View(getApplicationContext());
                         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);

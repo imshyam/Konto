@@ -47,7 +47,7 @@ public class MyActivity extends FragmentActivity {
                         getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mAppSectionsPagerAdapter);
-
+        mViewPager.setOffscreenPageLimit(5);
         // Specify that tabs should be displayed in the action bar.
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 
@@ -69,7 +69,7 @@ public class MyActivity extends FragmentActivity {
                 fragment.setArguments(args);
                 return fragment;
             }
-            if(i==1) {
+            else if(i==1) {
                 Fragment fragment = new NotificationTab();
                 Bundle args = new Bundle();
                 // Our object is just an integer :-P
@@ -77,7 +77,7 @@ public class MyActivity extends FragmentActivity {
                 fragment.setArguments(args);
                 return fragment;
             }
-            if(i==2) {
+            else if(i==2) {
                 Fragment fragment = new AddNotification();
                 Bundle args = new Bundle();
                 // Our object is just an integer :-P
@@ -85,7 +85,7 @@ public class MyActivity extends FragmentActivity {
                 fragment.setArguments(args);
                 return fragment;
             }
-            if(i==3) {
+            else if(i==3) {
                 Fragment fragment = new History();
                 Bundle args = new Bundle();
                 // Our object is just an integer :-P
@@ -93,7 +93,7 @@ public class MyActivity extends FragmentActivity {
                 fragment.setArguments(args);
                 return fragment;
             }
-            if(i==4) {
+            else if(i==4) {
                 Fragment fragment = new Prefereces();
                 Bundle args = new Bundle();
                 // Our object is just an integer :-P

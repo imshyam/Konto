@@ -52,11 +52,15 @@ public class Home extends Fragment {
     ProgressDialog pDialog;
     TableLayout ll;
     Button b1,b2;
+    static String cook="cook";
     //url
     private static final String url_getAll = "http://shyamu.herokuapp.com/mobile/getall";
     //Json nodes
     private static int Tag_Status = 0;
     public static String error="No Network.";
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -72,6 +76,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(getActivity(),Positive.class);
+                cook="tanddan b1";
                 startActivity(i);
             }
         });
@@ -79,6 +84,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(getActivity(),Negative.class);
+                cook="tanddan b2";
                 startActivity(i);
             }
         });
@@ -414,6 +420,8 @@ public class Home extends Fragment {
                 Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();
             }
         }
+    }public static String getCook() {
+        return cook;
     }
 }
 
