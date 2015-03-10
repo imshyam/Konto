@@ -44,7 +44,7 @@ public class AddNotification extends Fragment {
     Button b1;
     int id;
     //url
-    private static final String url_add = "http://shyamu.herokuapp.com/mobile/add";
+    private static final String url_add = Config.url_add();
     //Json nodes
     private static int Tag_Status = 0;
     public static String error="No Network.";

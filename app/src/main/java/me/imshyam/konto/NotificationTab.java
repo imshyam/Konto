@@ -41,7 +41,7 @@ import java.util.Date;
 public class NotificationTab extends Fragment {
     ProgressDialog pDialog;
     //url
-    private static final String url_getNoti = "http://shyamu.herokuapp.com/mobile/notification";
+    private static final String url_getNoti =Config.url_getNoti();
     //Json nodes
     private static int Tag_Status = 0;
     public static String error="No Network.";

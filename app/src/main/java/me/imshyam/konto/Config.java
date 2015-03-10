@@ -53,5 +53,25 @@ public class Config{
         return name1+","+value1+","+name2+","+value2;
 
     }
+    public static String url_getAll(){
+        //url
+        return "http://shyamu.herokuapp.com/mobile/getall";
+    }
+    public static String url_add(){
+        //url
+        return  "http://shyamu.herokuapp.com/mobile/add";
+    }
+    public static String url_getNoti(){
+        //url
+        return "http://shyamu.herokuapp.com/mobile/notification";
+    }
+    public static String url_delNot(){
+        //url
+        return "http://shyamu.herokuapp.com/mobile/notification/delete";
+    }
+    public static String url_signup(){
+        //url
+        return "http://shyamu.herokuapp.com/mobile/signup";
+    }
 
 }

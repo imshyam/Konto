@@ -47,8 +47,8 @@ public class Positive extends Activity{
     String AccId=null;
     String Dicision=null;
     //url
-    private static final String url_getAll = "http://shyamu.herokuapp.com/mobile/getall";
-    private static final String url_delNot = "http://shyamu.herokuapp.com/mobile/notification/delete";
+    private static final String url_getAll = Config.url_getAll();
+    private static final String url_delNot = Config.url_delNot();
     //Json nodes
     private static int Tag_Status = 0;
     public static String error="No Network.";

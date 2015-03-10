@@ -54,7 +54,7 @@ public class Home extends Fragment {
     Button b1,b2;
     static String cook="cook";
     //url
-    private static final String url_getAll = "http://shyamu.herokuapp.com/mobile/getall";
+    private static final String url_getAll = Config.url_getAll();
     //Json nodes
     private static int Tag_Status = 0;
     public static String error="No Network.";
@@ -420,8 +420,6 @@ public class Home extends Fragment {
                 Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();
             }
         }
-    }public static String getCook() {
-        return cook;
     }
 }
 

@@ -42,7 +42,7 @@ public class Negative extends Activity {
     ProgressDialog pDialog;
     JSONObject json;
     //url
-    private static final String url_getAll = "http://shyamu.herokuapp.com/mobile/getall";
+    private static final String url_getAll = Config.url_getAll();
     //Json nodes
     private static int Tag_Status = 0;
     public static String error="No Network.";
