@@ -9,19 +9,24 @@
         android:theme="@style/ActionBarTheme" >
         <activity
             android:name=".sign_in"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyActivity"/>
-        <activity android:name=".sign_up" android:label="@string/app_name"/>
+        <activity android:name=".MyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".sign_up" android:label="@string/app_name" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Locally" android:label="@string/app_name" android:screenOrientation="portrait"/>
         <activity
             android:name=".Positive"
             android:label="People Who Owe You"
-            android:parentActivityName=".MyActivity" >
+            android:parentActivityName=".MyActivity"
+            android:screenOrientation="portrait">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MyActivity" />
@@ -29,7 +34,8 @@
         <activity
             android:name=".Negative"
             android:label=" You Owe People"
-            android:parentActivityName=".MyActivity" >
+            android:parentActivityName=".MyActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MyActivity" />

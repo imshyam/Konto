@@ -14,7 +14,8 @@
         android:layout_marginTop="30dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:hint="UserName" />
+        android:hint="UserName"
+        android:singleLine="true" />
 
     <EditText
         android:layout_width="200sp"

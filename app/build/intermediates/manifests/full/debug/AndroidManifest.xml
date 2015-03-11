@@ -17,21 +17,30 @@
         android:theme="@style/ActionBarTheme" >
         <activity
             android:name="me.imshyam.konto.sign_in"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="me.imshyam.konto.MyActivity" />
+        <activity
+            android:name="me.imshyam.konto.MyActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="me.imshyam.konto.sign_up"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.imshyam.konto.Locally"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
         <activity
             android:name="me.imshyam.konto.Positive"
             android:label="People Who Owe You"
-            android:parentActivityName="me.imshyam.konto.MyActivity" >
+            android:parentActivityName="me.imshyam.konto.MyActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MyActivity" />
@@ -39,7 +48,8 @@
         <activity
             android:name="me.imshyam.konto.Negative"
             android:label=" You Owe People"
-            android:parentActivityName="me.imshyam.konto.MyActivity" >
+            android:parentActivityName="me.imshyam.konto.MyActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MyActivity" />

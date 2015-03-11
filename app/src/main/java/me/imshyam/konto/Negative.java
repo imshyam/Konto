@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -53,6 +55,13 @@ public class Negative extends Activity {
         setContentView(R.layout.negative);
         ll=(TableLayout)findViewById(R.id.table2);
         new GetAll().execute();
+    }
+    @Override
+      public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_refresh, menu);
+        return true;
     }
     /**
      * Background Async Task to add Notifications

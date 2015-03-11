@@ -15,10 +15,19 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ic_action_add=0x7f020000;
+        public static final int ic_action_device=0x7f020001;
+        public static final int ic_action_go_back=0x7f020002;
+        public static final int ic_action_logout=0x7f020003;
+        public static final int ic_action_refresh=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001d;
+        public static final int action_add=0x7f08001e;
+        public static final int action_back=0x7f08001d;
+        public static final int action_locally=0x7f080020;
+        public static final int action_logout=0x7f080021;
+        public static final int action_refresh=0x7f08001f;
         public static final int btn=0x7f080011;
         public static final int button=0x7f080009;
         public static final int button2=0x7f080018;
@@ -54,15 +63,18 @@ public final class R {
         public static final int add_notific=0x7f030001;
         public static final int history=0x7f030002;
         public static final int home=0x7f030003;
-        public static final int negative=0x7f030004;
-        public static final int notific=0x7f030005;
-        public static final int positive=0x7f030006;
-        public static final int preferences=0x7f030007;
-        public static final int sign_in=0x7f030008;
-        public static final int sign_up=0x7f030009;
+        public static final int locally=0x7f030004;
+        public static final int negative=0x7f030005;
+        public static final int notific=0x7f030006;
+        public static final int positive=0x7f030007;
+        public static final int preferences=0x7f030008;
+        public static final int sign_in=0x7f030009;
+        public static final int sign_up=0x7f03000a;
     }
     public static final class menu {
-        public static final int my=0x7f070000;
+        public static final int local=0x7f070000;
+        public static final int menu_refresh=0x7f070001;
+        public static final int my=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050000;
