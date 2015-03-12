@@ -4,6 +4,9 @@ ___
 - android app for manage borrowing from friends
 - also keep them synchronised with cloud 
 
+###Installation
+___
+`get Konto` [`here`](https://drive.google.com/file/d/0Bx43MGCMuCJcRC1ocU55ZXVNRnc/view?usp=sharing)
 
 ###Screenshots
 All screenshots can be found [`here`](https://github.com/iMshyam/Konto/tree/master/screenshots)
