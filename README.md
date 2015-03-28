@@ -14,7 +14,7 @@ All screenshots can be found [`here`](https://github.com/iMshyam/Konto/tree/mast
 ![login](https://raw.githubusercontent.com/iMshyam/Konto/master/screenshots/Screenshot_2015-02-04-01-06-43.png)
 
 ###### Home
-![Home Page](https://raw.githubusercontent.com/iMshyam/Konto/master/screenshots/Screenshot_2015-02-04-01-01-09.png)
+![Home Page](https://raw.githubusercontent.com/iMshyam/Konto/master/screenshots/Screenshot_2015-03-29-00-20-05.png)
 
 ---
 
