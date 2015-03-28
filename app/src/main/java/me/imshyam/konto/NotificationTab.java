@@ -1,11 +1,16 @@
 package me.imshyam.konto;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -52,6 +57,7 @@ public class NotificationTab extends Fragment {
 //        //set title
 //        ((MyActivity) getActivity())
 //                .setActionBarTitle("Notifications");
+        setHasOptionsMenu(true);
         new GetNoti().execute();
         View rootView = inflater.inflate(R.layout.notific, container, false);
         final TextView tv=(TextView)rootView.findViewById(R.id.textView);
@@ -63,6 +69,34 @@ public class NotificationTab extends Fragment {
             }
         });
         return rootView;
+    }
+    @Override
+    public void onCreateOptionsMenu(
+            Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.my, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_refresh:
+                new GetNoti().execute();
+                return true;
+            case R.id.action_logout:
+                SharedPreferences preferences = getActivity().getSharedPreferences("MyShPre", 0);
+                preferences.edit().clear().commit();
+                Intent i =new Intent(getActivity().getApplicationContext(),sign_in.class);
+                startActivity(i);
+                return true;
+            case R.id.action_locally:
+                Intent i1 =new Intent(getActivity().getApplicationContext(),Locally.class);
+                startActivity(i1);
+                getActivity().finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
     /**
      * Background Async Task to add Notifications
@@ -378,7 +412,7 @@ public class NotificationTab extends Fragment {
             // dismiss the dialog once got all details
             pDialog.dismiss();
             if(Tag_Status==1){
-                Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
             }
             else if(Tag_Status==0){
                 Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();

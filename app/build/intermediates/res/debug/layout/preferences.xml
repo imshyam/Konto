@@ -62,5 +62,7 @@
         android:id="@+id/button2"
         android:layout_below="@+id/editText10"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button"
+        android:textColor="#003366"/>
 </RelativeLayout><!-- From: file:/home/shyam/Desktop/Konto/app/src/main/res/layout/preferences.xml -->

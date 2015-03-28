@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- locally and logout should appear as action button -->
+    <item android:id="@+id/action_locally"
+        android:icon="@drawable/ic_action_device"
+        android:title="Play Locally"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_logout"
+        android:icon="@drawable/ic_action_logout"
+        android:title="logout"
+        android:showAsAction="ifRoom" />
+</menu>

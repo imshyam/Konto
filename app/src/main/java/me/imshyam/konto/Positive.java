@@ -759,7 +759,7 @@ public class Positive extends Activity{
             // dismiss the dialog once got all details
             pDialog.dismiss();
             if(Tag_Status==1){
-                Toast.makeText(getApplicationContext(),"Done",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Done",Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(getApplicationContext(),Positive.class);
                 startActivity(i);
             }
